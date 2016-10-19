@@ -59,22 +59,7 @@ source ./build/envsetup.sh
 lunch hikey-userdebug
 ```
 
-### 3.6. Download the Linaro toolchain
-The Linux kernel is built using the Linaro gcc toolchain.  Use this
-helper script to download this for you:
-```bash
-$ ./optee/get_toolchain.sh
-```
-
-### 3.7. Build the Linux kernel
-There is also a helper script to build the Linux kernel.  Android
-typically uses pre-built kernels, so it is necessary to build this
-manually.
-```bash
-$ ./optee/build_kernel.sh
-```
-
-### 3.8. Run the rest of the android build, For an 8GB board, use:
+### 3.6. Run the rest of the android build, For an 8GB board, use:
 ```bash
 make -j32
 ```

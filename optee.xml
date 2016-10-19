@@ -3,23 +3,12 @@
   <remote name="github"
     fetch="https://github.com/" />
 
-  <remove-project name="device/linaro/hikey" />
-  <remove-project name="device/linaro/hikey-kernel" />
+  <project path="device/linaro/optee/optee_test" name="OP-TEE/optee_test" revision="refs/tags/2.2.0" remote="github" />
 
-  <project path="device/linaro/hikey" name="linaro-swg/device-linaro-hikey"
-    revision="master" remote="github" />
+  <project path="device/linaro/optee/optee_client" name="OP-TEE/optee_client" revision="refs/tags/2.2.0" remote="github" />
 
-  <project path="device/linaro/hikey-kernel" name="linaro-swg/linux"
-    revision="aosp-optee-4.4" remote="github" />
+  <project path="device/linaro/optee/optee_os" name="OP-TEE/optee_os"  revision="refs/tags/2.2.0" remote="github" />
 
-  <project path="external/optee_test" name="OP-TEE/optee_test" revision="master" remote="github" />
-
-  <project path="external/optee_client" name="OP-TEE/optee_client" revision="master" remote="github" />
-
-  <project path="optee/optee_os" name="OP-TEE/optee_os" branch="master" remote="github" />
-
-  <project path="external/optee_hello_world" name="kuscsik/lcu14_optee_hello_world" branch="master" remote="github" />
-
-  <project path="optee" name="linaro-swg/optee_android_tools" branch="master" remote="github" />
+  <project path="device/linaro/optee/optee_hello_world" name="kuscsik/lcu14_optee_hello_world" branch="master" remote="github" />
 
 </manifest>
