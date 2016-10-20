@@ -3,12 +3,12 @@
   <remote name="github"
     fetch="https://github.com/" />
 
-  <project path="device/linaro/optee/optee_test" name="OP-TEE/optee_test" revision="refs/tags/2.2.0" remote="github" />
+  <project path="device/linaro/bootloader/optee_test" name="OP-TEE/optee_test" revision="master" remote="github" />
 
-  <project path="device/linaro/optee/optee_client" name="OP-TEE/optee_client" revision="refs/tags/2.2.0" remote="github" />
+  <project path="device/linaro/bootloader/optee_client" name="OP-TEE/optee_client" revision="refs/tags/2.2.0" remote="github" />
 
-  <project path="device/linaro/optee/optee_os" name="OP-TEE/optee_os"  revision="refs/tags/2.2.0" remote="github" />
+  <project path="device/linaro/bootloader/optee_os" name="OP-TEE/optee_os"  revision="refs/tags/2.2.0" remote="github" />
 
-  <project path="device/linaro/optee/optee_hello_world" name="kuscsik/lcu14_optee_hello_world" branch="master" remote="github" />
+  <project path="device/linaro/bootloader/optee_hello_world" name="kuscsik/lcu14_optee_hello_world" branch="master" remote="github" />
 
 </manifest>
