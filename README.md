@@ -61,11 +61,11 @@ lunch hikey-userdebug
 
 ### 3.6. Run the rest of the android build, For an 8GB board, use:
 ```bash
-make -j32
+make -j32 TARGET_BOOTIMAGE_USE_FAT=true
 ```
 For a 4GB board, use:
 ```bash
-make -j32 TARGET_USERDATAIMAGE_4GB=true
+make -j32 TARGET_BOOTIMAGE_USE_FAT=true TARGET_USERDATAIMAGE_4GB=true
 ```
 
 ## 4. Flashing the image
@@ -74,7 +74,12 @@ The instructions for flashing the image can be found in detail under
 1. Jumper links 1-2 and 3-4, leaving 5-6 open, and reset the board.
 2. Invoke
 ```bash
-./device/linaro/hikey/installer/flash-all.sh /dev/ttyUSBn
+./device/linaro/hikey/installer/flash-all.sh /dev/ttyUSBn [4g]
+```
+After flash-all.sh script completed, please do not POWER-OFF and 
+continue to flash boot partition again.
+```bash
+sudo fastboot flash boot out/target/product/hikey/boot_fat.uefi.img
 ```
 where the ttyUSBn device is the one that appears after rebooting with
 the 3-4 jumper installed.  Note that the device only remains in this
